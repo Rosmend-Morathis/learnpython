@@ -1,2 +1,2 @@
 # learnpython
-# execises following the tuition of Mr.Liao
+# execises following the tuition https://www.liaoxuefeng.com/
