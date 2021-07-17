@@ -1,17 +1,14 @@
 # 回数是指从左向右读和从右向左读都是一样的数，例如12321，909。
 # 请利用filter()筛选出回数：
+
+# filter()接收一个函数和一个序列。filter()把传入的函数依次作用于每个元素，
+# 然后根据返回值是True还是False决定保留还是丢弃该元素。
 def is_palindrome(n):
     L = [int(x) for x in str(n)]
     if (L == L[::-1]):
         return True
     else:
         return False
-
-def digit_iter():
-    n = 1
-    while True:
-        yield n
-        n = n + 1
 
 # 测试:
 output = filter(is_palindrome, range(1, 1000))
